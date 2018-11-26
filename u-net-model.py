@@ -11,6 +11,9 @@ from keras import backend as keras
 
 # pre-trained weights are initiazed to none
 # input size is 512 X 512 X 1 
+
+# need to update the Conv values in the fuctions called * * * * * * *
+
 def unet(pretrained_weights = None,input_size = (512,512,1)):
     inputs = Input(input_size)
     conv1 = Conv2D(64, 3, activation = 'relu', padding = 'same', kernel_initializer = 'he_normal')(inputs)
