@@ -1,0 +1,56 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1671\cocoasubrtf100
+{\fonttbl\f0\fmodern\fcharset0 Courier;\f1\fnil\fcharset0 HelveticaNeue;}
+{\colortbl;\red255\green255\blue255;\red27\green31\blue34;\red255\green255\blue255;}
+{\*\expandedcolortbl;;\cssrgb\c14118\c16078\c18039;\cssrgb\c100000\c100000\c100000;}
+{\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid1\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid1}}
+{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}}
+\margl1440\margr1440\vieww12900\viewh8400\viewkind0
+\deftab720
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sl360\partightenfactor0
+\ls1\ilvl0
+\f0\fs22 \cf2 \cb3 * Required to execute the program * \
+T\expnd0\expndtw0\kerning0
+ensorflow\cb1 \
+\ls1\ilvl0\cb3 Keras >= 1.0\cb1 \
+\pard\pardeftab720\sl360\sa320\partightenfactor0
+\cf2 \cb3 Most of the part coded with Python 3.7 conventions.
+\f1\fs32 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardeftab720\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 \cb1 \kerning1\expnd0\expndtw0 \
+\
+Folder Organization :\
+\
+Input files :  .
+\fs22 /Approach_1/data/wooden-logs/test/.     - for testing \
+			
+\fs24 .
+\fs22 /Approach_1/data/wooden-logs/train/images  - for training \
+Input files are the input images for the program
+\fs24 \
+\
+Output: .
+\fs22 /Approach_1/data/wooden-logs/test/.  \
+Output will be created with the name same file name .png in above folder\
+\
+Ground Truth Labels: 
+\fs24 .
+\fs22 /Approach_1/data/wooden-logs/train/labels  - for training \
+This folder contains the ground truth labels for the respective images. Mapping can be identified by the name.\
+\
+** two models were trained on same data ** \
+One with 5 epochs - \'93unet_1203_log.hdf5\'94\
+\
+Second with 10 epochs - \'93unet_new_log.hdf5\'94\
+\
+
+\fs24 \'97 Instructions to run the program. \
+\
+1. Copy the file to be tested in input file folder for testing mentioned above. Rename the file 0.png - this is hardcoded in the code. The program will read the file in numerical order only. Make sure no other files are present in the same folder. \
+\
+If needed can be updated in data.py in testGenerator method by updating num_image variable value. \
+\
+2. Update the path as required\
+3. Make sure the trained model is in the same folder as of execution\
+4. Final step requires matplotlib installed on machine. Since GACRC cluster does not have one this part is coded separately. \
+5. Post-processed image is shown in the final report.  }
